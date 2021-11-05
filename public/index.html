@@ -1,0 +1,47 @@
+<html>
+
+<head>
+        <title>CovidAsk</title>
+        <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <label for="english" class="btn">English</label>
+  <input type="radio" name="lang" id="english" checked>
+    
+  <label for="german" class="btn">Deutsch</label>
+  <input type="radio" name="lang" id="german">
+  
+  <div class="wrapper">
+      <div class="english">
+        <h1>ENG</h1>
+        <p>
+          <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+        <df-messenger
+          intent="WELCOME"
+          chat-title="COVIDASK"
+          agent-id="4f504f89-197d-4faa-ace1-b7bf35d8ffc9"
+          language-code="en"
+        ></df-messenger>
+      </p>
+      </div>
+      <div class="german">
+        <h1>MALAY</h1>     
+      </div>
+  </div>
+    
+    
+    
+    
+    
+    </body>    
+
+
+    
+
+
+
+        
+</body>
+
+</html>

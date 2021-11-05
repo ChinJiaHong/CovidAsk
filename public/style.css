@@ -1,0 +1,113 @@
+df-messenger {
+    --df-messenger-bot-message: #878fac;
+    --df-messenger-button-titlebar-color: #df9b56;
+    --df-messenger-chat-background-color: #fafafa;
+    --df-messenger-font-color: white;
+    --df-messenger-send-icon: #878fac;
+    --df-messenger-user-message: #479b3d;
+   }
+
+
+
+
+body{
+    background: #ccc;
+    text-align: center;
+    font-family: Calibri;
+}
+
+.btn, 
+.btn:visited {
+	color: #fff;
+	background: #005899;
+	box-shadow: 0px 3px 0px 0px #01192e;
+	padding: 8px 22px;
+	font-size: 18px;
+	line-height: 100%;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+	color: #fff;
+	display:inline-block;
+	vertical-align: middle;
+	text-align: center;
+	cursor: pointer;
+	font-weight: 300;
+	transition: background 0.1s ease-in-out;
+	-webkit-transition: background 0.1s ease-in-out;
+	-moz-transition: background 0.1s ease-in-out;
+	-ms-transition: background 0.1s ease-in-out;
+	-o-transition: background 0.1s ease-in-out;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	color: #fff;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.btn:hover, 
+.btn:visited:hover,
+.btn:focus, 
+.btn:visited:focus {
+	background: #00467b;
+}
+
+.btn:active, 
+.btn:visited:active {
+	box-shadow: 0px 1px 0px 0px #01192e;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0px auto;
+  background: #fff;
+  padding: 10px;
+  text-align: justify;
+  display: block;
+}
+
+.wrapper div{
+  display: none;
+}
+
+img{
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Checkbox Hack */
+
+input[type=radio] {
+	opacity: 0;
+}
+
+label { 
+  display: inline-block;
+  margin: 60px 0 10px 0;
+  cursor: pointer;
+}
+
+/* Default State */
+/* Toggled State */
+#english:checked ~ .wrapper .english{
+   display: block;
+}
+
+#english ~ .wrapper .english{
+   display: none;
+}
+
+#english:checked ~ .wrapper .german{
+  display: none;
+}
+
+#german ~ .wrapper .german{
+  display: none;
+}
+
+#german:checked ~ .wrapper .english{
+  display: none;
+}
+
+#german:checked ~ .wrapper .german{
+  display: block;
+}
