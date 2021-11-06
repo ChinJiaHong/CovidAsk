@@ -6,15 +6,6 @@
 </head>
 
 <body>
-  <label for="english" class="btn">English</label>
-  <input type="radio" name="lang" id="english" checked>
-    
-  <label for="german" class="btn">Deutsch</label>
-  <input type="radio" name="lang" id="german">
-  
-  <div class="wrapper">
-      <div class="english">
-        <h1>ENG</h1>
         <p>
           <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
         <df-messenger
@@ -24,17 +15,51 @@
           language-code="en"
         ></df-messenger>
       </p>
+
+      <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
       </div>
-      <div class="german">
-        <h1>MALAY</h1>     
+      
+      <div class="container">
+        <!-- Nav -->
+        <nav class="main-nav">
+          <ul class="left-menu">
+            <li><a href="#">COVIDASK</a></li>
+          </ul>
+
+          <ul class="main-menu">
+            <li><a href="#">Our Missions</a></li>
+            <li><a href="#">About CovidAsk</a></li>
+            <li><a href="#">CovidAsk Features</a></li>
+            <li><a href="#">Tools</a></li>
+          </ul>
+        </nav>
+
+        <!-- Showcase -->
+        <header class="showcase">
+          <h1>COVIDASK in Malaysia</h1>
+          <p>
+            COVIDASK is an AI chatbot developed for COVID-19 information dissemination and symptoms assessment.
+          </p>
+        </header>
+
+
+        <!-- Showcase -->
+        <header class="ourmissions">
+          <h2>Training AI with Accurate Information</h2>
+          <p>
+            We harvested the COVID-19 information from various credible sources, which include WHO (World Health Organization), CDC (Centers for Disease Control and Prevention) and Malaysia government websites. 
+          </p>
+        </header>
+        
+
+
+
       </div>
-  </div>
     
+      
     
-    
-    
-    
-    </body>    
+</body>    
 
 
     
