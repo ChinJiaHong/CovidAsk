@@ -24,7 +24,7 @@ df-messenger {
   }
   
   a {
-    color: #262626;
+    color: #fff;
     text-decoration: none;
   }
   
@@ -300,16 +300,17 @@ df-messenger {
   
   /* Footer */
   .footer {
-    background: #f2f2f2;
-    color: #616161;
+    background: #70A9FF;
+    color: #fff;
     font-size: 12px;
-    padding: 20px 0;
+    padding: 10px 0;
+    font-weight: 800;
   }
   
   .footer-inner {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 20px 0 20px;
+    padding: 10px 20px 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -319,10 +320,6 @@ df-messenger {
     margin-bottom: 20px;
     display: flex;
     align-items: center;
-  }
-  
-  .footer div i {
-    margin-right: 10px;
   }
   
   .footer ul {
