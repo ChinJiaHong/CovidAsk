@@ -110,8 +110,8 @@ df-messenger {
   /* Showcase */
   .showcase {
     width: 100%;
-    height: 600px;
-    background: url(pictures/doctor_pic1.jpg) no-repeat right center, #FAFAFA;
+    height: 550px;
+    background: url(pictures/doctor_pic1.jpg) no-repeat right bottom, #FAFAFA;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -140,33 +140,98 @@ df-messenger {
     margin-top: 20px;
   }
   
-  /* Home cards */
-  .home-cards {
+  /* Features */
+  .features {
+    height: 1200px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-    margin-bottom: 40px;
+    grid-template-columns: repeat(3, 3fr);
+    grid-gap: 50px;
+    margin: 0px 90px 90px 90px;
+    background: #fff;
+    filter: drop-shadow(12px 15px 18px rgb(192, 192, 192));
+    border-radius: 20px;
   }
-  
-  .home-cards img {
+
+  .features h1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
     width: 100%;
-    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
-  .home-cards h3 {
-    margin-bottom: 5px;
+  .features img {
+    width: 35%;
+    margin-top: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   
-  .home-cards a {
-    display: inline-block;
-    padding-top: 10px;
-    color: #0067b8;
-    text-transform: uppercase;
-    font-weight: bold;
+  .features h3 {
+    margin-top: 50px;
+    text-align: center;
+    display: block;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+
+  .features p {
+    text-align: center;
+    margin: 20px;
+    display: block;
+    margin-left: 70px;
+    margin-right: 70px;
+    color: #757588;
+  }
+
+  /* Tools */
+  .tools {
+    height: 1300px;
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    grid-gap: 50px;
+    margin: 0px 90px 90px 90px;
+    background: #fff;
+    filter: drop-shadow(12px 15px 18px rgb(192, 192, 192));
+    border-radius: 20px;
+  }
+
+  .tools h1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
-  .home-cards a:hover i {
-    margin-left: 10px;
+  .tools img {
+    width: 35%;
+    margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .tools h3 {
+    margin-top: 50px;
+    text-align: center;
+    display: block;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+
+  .tools p {
+    text-align: center;
+    margin: 20px;
+    display: block;
+    margin-left: 70px;
+    margin-right: 70px;
+    color: #757588;
   }
   
   /* Xbox */
@@ -347,12 +412,12 @@ df-messenger {
     }
   }
 
-  /* Showcase */
+  /* Ourmissions */
   .ourmissions {
     width: 75%;
     height: 230px;
     background: url('pictures/virus1.png') no-repeat center center/cover;
-    filter: drop-shadow(12px 15px 12px rgb(150, 150, 150));
+    filter: drop-shadow(12px 15px 12px rgb(192, 192, 192));
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -364,7 +429,7 @@ df-messenger {
   }
 
   .ourmissions h2{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-size: 22px;
     font-weight: 400;
     color: #fff;
@@ -377,3 +442,59 @@ df-messenger {
     color: #fff;
     width: 800px;
   }
+
+    /* About CovidAsk */
+  .about {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    margin-bottom: 40px;
+    margin: 0px 40px 90px 90px;
+  }
+
+  .item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 90%;
+    height: 530px;
+    background: url('pictures/virus2.png') no-repeat center center/cover;
+    filter: drop-shadow(12px 15px 12px rgb(192, 192, 192));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    /*margin: 40px 40px 40px 130px;*/
+    border-radius: 20px;
+    padding-bottom: 50px;
+  }
+
+  .about .item1 h2{
+    margin-bottom: 8%;
+    font-size: 22px;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  .about .item1 p {
+    margin-bottom: 5%;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    width: 550px;
+  }
+
+  .item2 {
+    grid-column-start: 3;
+    width: 90%;
+    height: 530px;
+    background: #fff;
+    filter: drop-shadow(12px 15px 18px rgb(192, 192, 192));
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    border-radius: 20px;
+    padding: 160px 20px 20px 20px;
+  }
+
+
