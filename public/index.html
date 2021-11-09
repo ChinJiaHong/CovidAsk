@@ -2,11 +2,14 @@
 
 <head>
         <title>CovidAsk</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
-        <p>
+      <p>
           <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
         <df-messenger
           intent="WELCOME"
@@ -17,8 +20,13 @@
       </p>
 
       <div class="menu-btn">
-        <i class="fas fa-bars fa-2x"></i>
+        <!--<i class="fas fa-bars fa-2x"></i>-->
+        <span class="material-icons">menu</span>
       </div>
+
+      <script>
+        document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.main-menu').classList.toggle('show'));
+      </script>
       
       <div class="container">
         <!-- Nav -->
@@ -28,10 +36,10 @@
           </ul>
 
           <ul class="main-menu">
-            <li><a href="#">Our Missions</a></li>
-            <li><a href="#">About CovidAsk</a></li>
-            <li><a href="#">CovidAsk Features</a></li>
-            <li><a href="#">Tools</a></li>
+            <li><a href="#ourmissions">Our Missions</a></li>
+            <li><a href="#about">About CovidAsk</a></li>
+            <li><a href="#features">CovidAsk Features</a></li>
+            <li><a href="#tools">Tools</a></li>
           </ul>
         </nav>
 
@@ -45,7 +53,7 @@
 
 
         <!-- ourmissions -->
-        <section class="ourmissions">
+        <section class="ourmissions"  id="ourmissions">
           <h2>Training AI with Accurate Information</h2>
           <p>
             We harvested the COVID-19 information from various credible sources, which include WHO (World Health Organization), CDC (Centers for Disease Control and Prevention) and Malaysia government websites. 
@@ -53,7 +61,7 @@
         </section>
 
         <!-- About CovidAsk -->
-        <section class="about">
+        <section class="about"  id="about">
           <div class="item1">
           <h2>How does CovidAsk works?</h2>
           <p>
@@ -70,7 +78,7 @@
         </section>
 
         <!-- Features -->
-        <section class="features">
+        <section class="features" id="features">
           <h1>How does CovidAsk tackles the pandemic in Malaysia?</h1>
           <div>
             <img src="pictures/feature1.png" alt="Feature#1">
@@ -103,7 +111,7 @@
         </section>
 
         <!-- Tools -->
-        <section class="tools">
+        <section class="tools"  id="tools">
           <h1>We use these tools to design and develop CovidAsk.</h1>
           <div>
             <img src="pictures/figma.png" alt="Figma Logo">
