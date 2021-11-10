@@ -4,7 +4,7 @@ df-messenger {
     --df-messenger-chat-background-color: #fafafa;
     --df-messenger-font-color: white;
     --df-messenger-send-icon: #878fac;
-    --df-messenger-user-message: #479b3d;
+    --df-messenger-user-message: #70A9FF;
    }
 
 
@@ -110,19 +110,20 @@ df-messenger {
   /* Showcase */
   .showcase {
     width: 100%;
-    height: 550px;
-    background: url(pictures/doctor_pic1.jpg) no-repeat right bottom, #FAFAFA;
+    height: 750px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(pictures/landing_pic3.jpg) no-repeat center top/cover;
     display: flex;
     flex-direction: column;
-    text-align: left;
+    text-align: center;
     justify-content: center;
+    padding-top: 10px;
     padding-bottom: 30px;
     margin-bottom: 20px;
   }
   
   .showcase h1, .showcase p {
     margin-bottom: 10px;
-    margin-left: 180px;
+    color: #fff;
   }
 
   .showcase h1{
@@ -132,25 +133,29 @@ df-messenger {
   .showcase p {
     font-size: 28px;
     font-weight: 100;
-    color: #757588;
-    width: 750px;
+    
   }
   
-  .showcase .btn {
+  /*.showcase .btn {
     margin-top: 20px;
-  }
+  }*/
   
   /* Features */
   .features {
-    height: 1200px;
+    /*height: 1200px;*/
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     /*margin: 0px 90px 90px 90px;*/
     background: #F5F5F5;
     /*filter: drop-shadow(12px 15px 18px rgb(192, 192, 192));*/
-    /*border-radius: 20px;*/
+    border-radius: 20px;
     margin-bottom: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: #000;
+    /*border-style: solid;*/
   }
 
   .features h1 {
@@ -161,6 +166,7 @@ df-messenger {
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
+    font-size: 32px;
   }
   
   .features img {
@@ -189,16 +195,18 @@ df-messenger {
   }
 
   /* Tools */
-  .tools {
-    height: 1300px;
+  /*.tools {
+
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
-    /*margin: 0px 90px 90px 90px;*/
     background: #F5F5F5;
-    /*filter: drop-shadow(12px 15px 18px rgb(192, 192, 192));/*
-    /*border-radius: 20px;*/
+    
+    border-radius: 20px;
     margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .tools h1 {
@@ -234,81 +242,177 @@ df-messenger {
     margin-left: 70px;
     margin-right: 70px;
     color: #757588;
-  }
+  }*/
 
    /* Ourmissions */
    .ourmissions {
-    width: 75%;
-    height: 230px;
-    background: url('pictures/virus1.png') no-repeat center center/cover;
-    filter: drop-shadow(12px 15px 12px rgb(192, 192, 192));
+    width: 80%;
+    height: 350px;
+    background: #fff;
+    /*filter: drop-shadow(12px 15px 12px rgb(192, 192, 192));*/
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: flex-end;
+    align-items: left;
+    text-align: left;
+    justify-content: flex-start;
     margin: 80px auto;
-    border-radius: 20px;
-    padding-bottom: 50px;
+    /*border-radius: 20px;*/
+    padding-bottom: 30px;
+    border-bottom: 1px solid #E5E5E5;
   }
 
   .ourmissions h2{
+    width: 60%;
     margin-bottom: 15px;
-    font-size: 22px;
-    font-weight: 400;
-    color: #fff;
+    font-size: 52px;
+    font-weight: 600;
+    color: #222222;
   }
 
   .ourmissions p {
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
-    color: #fff;
+    color: #A4B5CF;
     width: 800px;
+    line-height: 33px;
   }
 
     /* About CovidAsk */
   .about {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
     margin-bottom: 40px;
     margin: 0px 40px 90px 90px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #E5E5E5;
+    padding-bottom: 80px;
+  }
+
+  .about h1 {
+    /*width: 50%;*/
+    text-align: left;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 42px;
+    font-weight: 600;
+    color: #222222;
+
+  }
+
+  .about p {
+   /*width: 50%;*/
+    text-align: left;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    font-weight: 400;
+    color: #A4B5CF;
+    padding-top: 40px;
+    line-height: 33px;
   }
 
   .item1 {
     grid-column-start: 1;
     grid-column-end: 3;
-    width: 90%;
-    height: 530px;
-    background: url('pictures/virus2.png') no-repeat center center/cover;
+    /*width: 80%;*/
+    height: 430px;
+    background: #F8E8DA;
     filter: drop-shadow(12px 15px 12px rgb(192, 192, 192));
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: flex-end;
+    align-items: left;
+    text-align: left;
+    justify-content: center;
     /*margin: 40px 40px 40px 130px;*/
     border-radius: 20px;
     padding-bottom: 50px;
+    padding-left: 80px;
+    padding-top: 100px;
   }
 
   .about .item1 h2{
-    margin-bottom: 8%;
-    font-size: 22px;
+    margin-bottom: 2%;
+    font-size: 28px;
     font-weight: 400;
-    color: #fff;
+    color: #FF9800;
+    width: 90%;
   }
 
   .about .item1 p {
+    margin-top: 0;
+    margin-left: 0%;
+    margin-right: 0%;
     margin-bottom: 5%;
-    font-size: 16px;
-    font-weight: 400;
-    color: #fff;
+    padding-top: 0%;
+    font-size: 18px;
+    font-weight: 200;
+    color: #FF9800;
     width: 550px;
+    font-style: italic;
   }
 
-  .item2 {
+
+  /* How It Works */
+  .how-it-works{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin-bottom: 40px;
+    margin: 0px 40px 90px 90px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #E5E5E5;
+    padding-bottom: 80px;
+  }
+
+  .how-it-works h1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100%;
+    text-align: left;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 52px;
+    font-weight: 600;
+    color: #222222;
+
+  }
+
+  .how-it-works img {
+    text-align: left;
+    /*margin-top: 50px;*/
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 42px;
+    font-weight: 600;
+    color: #222222;
+    width: 150%;
+    position: relative;
+    right: 60%;
+  }
+
+  .how-it-works p {
+    text-align: left;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    font-weight: 400;
+    color: #A4B5CF;
+    padding-top: 40px;
+    line-height: 33px;
+  }
+
+
+  /*.item2 {
     grid-column-start: 3;
     width: 90%;
     height: 530px;
@@ -319,10 +423,10 @@ df-messenger {
     justify-content: flex-end;
     border-radius: 20px;
     padding: 160px 20px 20px 20px;
-  }
+  }*/
 
   
-  /* Xbox */
+  /*Xbox*/
   /*.xbox {
     width: 100%;
     height: 350px;
@@ -426,9 +530,9 @@ df-messenger {
       background-color: #fff;
     }
 
-  .tools {
+  /*.tools {
     background-color: #fff;
-  }
+  }*/
 
 }
 
@@ -488,7 +592,7 @@ df-messenger {
     }
 
 
-    .tools {
+    /*.tools {
       grid-template-columns: repeat(2, 1fr);
     }
 
@@ -497,7 +601,7 @@ df-messenger {
       grid-column-end: 3;
       font-size: large;
       width: 80%;
-    }
+    }*/
   
     /*.xbox .content p {
       display: none;
@@ -505,9 +609,9 @@ df-messenger {
   
     .xbox .content h2 {
       margin-bottom: 20px;
-    }
+    }*/
   
-    .carbon .content {
+    /*.carbon .content {
       width: 85%;
     }
   
@@ -529,7 +633,7 @@ df-messenger {
       width: 80%;
     }
 
-    .tools {
+    /*.tools {
       grid-template-columns: 1fr;
       background-color: #fff;
     }
@@ -539,7 +643,7 @@ df-messenger {
       grid-column-end: 2;
       font-size: large;
       width: 80%;
-    }
+    }*/
   
     /*.links .links-inner {
       grid-template-columns: 1fr;
