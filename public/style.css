@@ -183,6 +183,7 @@ df-messenger {
     display: block;
     margin-left: 70px;
     margin-right: 70px;
+    font-size: 22px;
   }
 
   .features p {
@@ -191,7 +192,9 @@ df-messenger {
     display: block;
     margin-left: 70px;
     margin-right: 70px;
-    color: #757588;
+    color: #A4B5CF;
+    font-size: 18px;
+    line-height: 33px;
   }
 
   /* Tools */
@@ -501,7 +504,7 @@ df-messenger {
   .footer {
     background: #70A9FF;
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
     padding: 10px 0;
     font-weight: 800;
   }
@@ -529,6 +532,11 @@ df-messenger {
   .footer li {
     margin-right: 30px;
     margin-bottom: 20px;
+  }
+
+  .footersocialicons {
+    width: 25px !important; 
+    height: 25px !important;
   }
 
   /*Media Query*/
@@ -572,8 +580,15 @@ df-messenger {
       opacity: 0.5;
     }
   
-    .main-nav ul.left-menu {
+    .main-nav ul.left-menu {  
       margin-right: 50px;
+    /*position: relative;
+      padding-left: 0px;
+      right: 20px;*/
+    }
+
+    .main-nav ul li {
+      padding: 0 0;
     }
   
     .main-nav ul.main-menu {
@@ -619,7 +634,8 @@ df-messenger {
 
 
     .ourmissions h2 {
-      font-size: 48px;
+      font-size: 44px;
+      width: 80%;
     }
 
     /*.ourmissions p {
@@ -681,7 +697,10 @@ df-messenger {
       margin-top: 0%;
       padding-top: 0%;
     }
-
+    
+    .footer-inner {
+      width: 80%;
+    }
 
     
 
@@ -741,6 +760,16 @@ df-messenger {
 
     .about .item1 p {
       font-size: 12px;
+      width: 80%;
+    }
+
+    .footer {
+      font-size: 12px;
+    }
+
+    .footersocialicons {
+      width: 22px !important; 
+      height: 22px !important;
     }
 
     /*.tools {
