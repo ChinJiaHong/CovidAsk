@@ -2,6 +2,7 @@
 
 <head>
         <title>CovidAsk</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="pictures/favicon-32x32.png">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,6 +17,7 @@
           chat-title="COVIDASK"
           agent-id="4f504f89-197d-4faa-ace1-b7bf35d8ffc9"
           language-code="en"
+          chat-icon=""
         ></df-messenger>
       </p>
 
@@ -26,6 +28,17 @@
 
       <script>
         document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.main-menu').classList.toggle('show'));
+        /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+          var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.querySelector(".main-nav").style.top = "0";
+          } else {
+            document.querySelector(".main-nav").style.top = "-50px";
+          }
+          prevScrollpos = currentScrollPos;
+          }
       </script>
       
       <div class="container">
@@ -35,12 +48,12 @@
             <li><a href="#">COVIDASK</a></li>
           </ul>
 
-          <ul class="main-menu">
-            <li><a href="#ourmissions">Our Missions</a></li>
+          <!--<ul class="main-menu">
+            <li><a href="#ourmissions">Our Mission</a></li>
             <li><a href="#about">Why CovidAsk</a></li>
             <li><a href="#how-it-works">About CovidAsk</a></li>
             <li><a href="#features">CovidAsk Features</a></li>
-          </ul>
+          </ul>-->
         </nav>
 
         <!-- Showcase -->
@@ -91,33 +104,33 @@
         <section class="features" id="features">
           <h1>Innovations you can find on COVIDASK</h1>
           <div>
-            <img src="pictures/feature1.png" alt="Feature#1">
+            <img src="pictures/Mobile View 1.png" alt="Feature#1">
             <h3>Updated information</h3>
             <p>
               CovidAsk gathers your must-know COVID-19 information.
             </p>
           </div>
           <div>
-            <img src="pictures/feature2.png" alt="Feature#2" />
+            <img src="pictures/Mobile View 2.png" alt="Feature#2" />
             <h3>Self-triage</h3>
             <p>
               The self-triage tool helps you understand your risk to COVID-19.
             </p>
           </div>
           <div>
-            <img src="pictures/feature3.png" alt="Feature#3" />
+            <img src="pictures/Mobile View 3.png" alt="Feature#3" />
             <h3>Stress management</h3>
             <p>
               Ask for stress help to learn some skills to manage stress.
             </p>
           </div>
-          <div>
+          <!--<div>
             <img src="pictures/feature4.png" alt="Feature#4" />
             <h3>Multiple languages</h3>
             <p>
               You can choose to interact with COVIDASK in either English or Malay soon.
             </p>
-          </div>
+          </div>-->
         </section>
 
 
@@ -204,6 +217,9 @@
           </ul>
           <ul>
             <li><a href="https://www.linkedin.com/in/chin-jia-hong/" target="_blank"><img src="pictures/linkedinicon.png" alt="Linkedin" class="footersocialicons"></a></li>
+            <li><a href="https://www.instagram.com/jia_hong14/" target="_blank"><img src="pictures/instagram.png" alt="Instagram" class="footersocialicons"></a></li>
+            <!--<li><a href="mailto:jhchin73@gmail.com" target="_blank"><img src="pictures/email.png" alt="Email" class="footersocialicons"></a></li>-->
+            <li><a href="mailto:jhchin73@gmail.com" target="_blank"><img src="pictures/email.png" alt="Email" class="footersocialicons"></a></li>
             </ul>
         </div>
       </footer>
