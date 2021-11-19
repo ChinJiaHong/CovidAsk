@@ -341,7 +341,7 @@ df-messenger {
     grid-column-start: 1;
     grid-column-end: 3;
     /*width: 80%;*/
-    height: 430px;
+    height: 480px;
     background: #F8E8DA;
     filter: drop-shadow(12px 15px 12px rgb(192, 192, 192));
     display: flex;
